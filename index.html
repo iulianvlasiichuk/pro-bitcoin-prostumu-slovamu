@@ -19,6 +19,7 @@
             align-items: center;
             height: 100vh;
             text-align: center;
+            padding: 20px;
         }
         .container {
             width: 100%;
@@ -49,27 +50,31 @@
         }
         .links {
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .links a {
-            padding: 15px 30px;
-            text-decoration: none;
-            color: white;
-            background: #f9a825;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: 0.3s;
-            font-size: 18px;
-        }
-        .links a:hover {
-            background: #ffcc00;
-        }
-        .hero {
-            display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 15px;
+        }
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f9a825;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: 0.3s;
+            width: fit-content;
+        }
+        .link-item:hover {
+            background: #ffcc00;
+        }
+        .link-item img {
+            width: 30px;
+            height: 30px;
+        }
+        .link-item a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -80,10 +85,22 @@
             <h1>Про Bitcoin простими словами</h1>
             <p>Привіт! Мене звати Юліан, і це подкаст про Bitcoin простими словами. Тут я просто й доступно розповідаю про цифрове золото, фінансову свободу та всі теми, які так чи інакше пов’язані з Біткойном. Долучайся, щоб розібратися у світі децентралізованих фінансів!</p>
             <div class="links">
-                <a href="https://www.youtube.com/@pro-bitcoint-prostumu-slovamu" target="_blank">YouTube</a>
-                <a href="https://www.instagram.com/probitcoinprostumuslovamu/" target="_blank">Instagram</a>
-                <a href="https://open.spotify.com/show/7CK0pusbS321gLiEIpzT7r?si=DnXJLkcfRT-rX1U5BltvFA" target="_blank">Spotify</a>
-                <a href="https://podcasts.apple.com/us/podcast/%D0%BF%D1%80%D0%BE-bitcoin-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%B8%D0%BC%D0%B8-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D0%BC%D0%B8/id1798701434" target="_blank">Apple Podcast</a>
+                <div class="link-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Youtube_social_square_red.png" alt="YouTube">
+                    <a href="https://www.youtube.com/@pro-bitcoint-prostumu-slovamu" target="_blank">YouTube</a>
+                </div>
+                <div class="link-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    <a href="https://www.instagram.com/probitcoinprostumuslovamu/" target="_blank">Instagram</a>
+                </div>
+                <div class="link-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">
+                    <a href="https://open.spotify.com/show/7CK0pusbS321gLiEIpzT7r?si=DnXJLkcfRT-rX1U5BltvFA" target="_blank">Spotify</a>
+                </div>
+                <div class="link-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Apple_Podcast_logo.svg" alt="Apple Podcast">
+                    <a href="https://podcasts.apple.com/us/podcast/%D0%BF%D1%80%D0%BE-bitcoin-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%B8%D0%BC%D0%B8-%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D0%BC%D0%B8/id1798701434" target="_blank">Apple Podcast</a>
+                </div>
             </div>
         </div>
     </div>
